@@ -18,7 +18,7 @@ To build the library:
 
 ## Running
 
-To start the documentation where you can show case the elements from lib:
+To start the documentation where you can show case the elements from dist:
 
 `yarn dev`
 
