@@ -9,6 +9,11 @@ const baseConfig = require('./webpack.config.common.js')
 const config = {
   mode: 'development',
   devtool: 'source-map',
+  entry: [path.resolve(__dirname, '../docs/index.js')],
+  output: {
+    path: path.resolve(__dirname, '../docs'),
+    filename: '[name].js'
+  },
   devServer: {
     contentBase: [path.resolve(__dirname, '../public')],
     watchContentBase: true,
