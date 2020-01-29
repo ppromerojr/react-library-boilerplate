@@ -1,0 +1,36 @@
+{
+  "name": "@sample/framework",
+  "version": "1.0.0",
+  "main": "dist/framework.js",
+  "files": [
+    "dist"
+  ],
+  "author": "Pablito Romero Jr",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2",
+    "webpack-node-externals": "^1.7.2",
+    "webpack-shell-plugin": "^0.5.0"
+  },
+  "scripts": {
+    "dev": "webpack-dev-server --config ./webpack/webpack.config.development",
+    "build": "webpack -p --config ./webpack/webpack.config.production"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  }
+}
