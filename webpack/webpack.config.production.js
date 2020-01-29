@@ -19,7 +19,7 @@ const production = {
   output: {
     path: path.resolve(__dirname, '../dist'),
     filename: '[name].js',
-    library: '@spage/framework',
+    library: '@sample/framework',
     libraryTarget: 'commonjs2'
   },
   plugins: [new webpack.ProgressPlugin(), new CleanWebpackPlugin()],

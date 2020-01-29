@@ -17,8 +17,7 @@ const config = {
   devServer: {
     contentBase: [path.resolve(__dirname, '../public')],
     watchContentBase: true,
-    liveReload: false,
-    hot: true
+    hotOnly: true
   },
   plugins: [
     new HtmlWebpackPlugin({

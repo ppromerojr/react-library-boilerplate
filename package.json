@@ -25,7 +25,8 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --config ./webpack/webpack.config.development",
-    "build": "webpack -p --config ./webpack/webpack.config.production"
+    "build": "webpack -p --config ./webpack/webpack.config.production",
+    "build:dll": "webpack -p --config ./webpack/webpack.config.library"
   },
   "babel": {
     "presets": [
