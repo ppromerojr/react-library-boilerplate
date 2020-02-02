@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Button = ({ children }) => {
-  return <button>{children}</button>
+  return <button>{children} - 9</button>
 }
 
 export default Button

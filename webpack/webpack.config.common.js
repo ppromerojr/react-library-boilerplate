@@ -5,6 +5,14 @@ const baseConfig = {
   module: {
     rules: [
       {
+        test: /\.js$/,
+        include: path.resolve(__dirname, '../src'), 
+        use: [
+          "thread-loader",
+          "babel-loader"
+        ]
+      },
+      {
         test: /\.(js)$/,
         exclude: /node_modules/,
         use: ['babel-loader']
